@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import ContactCard from './contact_card';
-import contactData from '../data/contacts';
+// import contactData from '../data/contacts';
 
 class ContactList extends Component{
 
-    constructor(props){
-        super(props);
+    // constructor(props){
+    //     super(props);
 
-        this.state = {
-            contacts: contactData,
-        }
-    }
+    //     this.state = {
+    //         contacts: contactData,
+    //     }
+    // }
 
     render(){
-        console.log('Contact Data',this.state.contacts);
+        // console.log('Contact Data',this.state.contacts);
 
-        const list = this.state.contacts.map(function(item,index){
+        const list = this.props.contacts.map(function(item,index){
             // console.log('item: ',item);
             return <ContactCard contact = { item } key = { index }/>
         });

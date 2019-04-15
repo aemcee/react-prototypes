@@ -2,7 +2,7 @@ import React from 'react';
 
 export default props => {
 
-    console.log('Field props: ',props);
+    // console.log('Field props: ',props);
 
     // const { name, label, type, onChange } = props;
 
